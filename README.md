@@ -7,21 +7,22 @@ I plan on predicting the fires using data from a smoke detector. And this [link]
 
 # Machine Learning Preparation and Processing
 
-Since you have categorized this as a classification problem, you will likely need to use algorithms such as , decision trees, or random forests to classify the data into "fire" and "no fire" categories.
-
-Data exploring and cleaning was taken placed, it includes missing valueschecking, identifying outliers, and ensuring the data is properly formatted. On machine learning algorithms, logistic regression and KNN were used and I also tuned them with parameters. Finally, performance evaluation was applied whilst using metrics such as accuracy, precision, recall, and F1-score.
+Data exploring and cleaning was taken place, which includes missing values checking, outliers identifying ,and ensuring the data is properly formatted. On machine learning algorithms, logistic regression and KNN were used and I also tuned them with different parameters. Finally, performance evaluation was applied whilst using metrics such as accuracy, precision and F1-score.
 
 #Results
 
 ![image](https://user-images.githubusercontent.com/126204698/231933112-7f5378fa-25bc-4a64-874c-776dd6973362.png)
 
-1. Results above shows Tuned KNN is the mest model amongst four becaue it has the highest metrics on testing datas. 
+- KNN is the mest model amongst all with the best testing data metrics.
 
-2. False Negatives (Type 2 Errors) are more costly than False Positives (Type 1 Errors) in this project.
+- Key insights on metrics
 
-3. In this project, false positive is predicting a fire when there is none whilst false negative is predicting nothing if there is a fire. 
+1. In this project, false positive (Type 1 Errors) is predicting a fire when there is none whilst false negative (Type 2 Errors) is predicting no fire but actually there is a fire. Therefore, we can tell that **false negatives are more costly than false positives in this project.**
+
+2. Precision is a bit higher than accuracy (.967 > .967) which is fine because we can tolerate with false positives in this case.
 
 # Further questions
-1. What is the probability of a fire given a certain set of sensor readings?
-2. Which sensors are most important for predicting fires?
-3. Can we use this model to detect fires in real-time and trigger alarms?
+
+1. Which sensors are most important for predicting fires?
+
+2. Can we use this model to detect fires in real-time and trigger alarms?
